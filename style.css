@@ -1,0 +1,118 @@
+:root {
+    --color-monster: #ffdd94;
+    --color-horns: #fa897b;
+}
+
+*,
+*:before,
+*:after {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #86e3ce;
+}
+
+.wrapper {
+    background-color: azure;
+    width: 90vmin;
+    padding: 30px 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+}
+
+.buttons {
+    width: 90%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px dashed #1b1c1e;
+    padding: 20px 0 40px 0;
+}
+
+.buttons button {
+    background-color: #d0e6a5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+
+.container {
+    position: relative;
+}
+
+.monster {
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    height: 420px;
+    width: 350px;
+}
+
+.monster-body {
+    height: 300px;
+    width: 300px;
+    background-color: var(--color-monster);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50px;
+    border-radius: 50%;
+}
+
+.monster-body:before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: var(--color-monster);
+    border-radius: 0 0 50px 50px;
+    bottom: -10px;
+    left: 200px;
+    transform: rotateZ(-30deg);
+}
+
+.monster-body:after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: var(--color-monster);
+    border-radius: 0 0 50px 50px;
+    bottom: -10px;
+    left: 40px;
+    transform: rotateZ(30deg);
+}
+
+.monster-horns {
+    width: 340px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 70px var(--color-horns);
+    position: absolute;
+    transform: translateX(-50%);
+    top: -85px;
+    left: 50%;
+}
+
+img {
+    position: relative;
+    transform: translateX(25%);
+    top: 20px;
+}
+
+
+
+
+
